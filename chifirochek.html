@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-       <style>body, html {
-      width: 100%;
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      color: #fff;
-      line-height: 1.6;
-      
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }.container {
-      width: 80%;
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      color: #fff;
-    }</style>
         <meta charset="UTF-8">
+        <title>Туториал по Чифиру</title>
+        <style>
+            /* Общие стили для всего документа */
+            body, html {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт */
+                color: #f0f0f0; /* Более светлый текст */
+                line-height: 1.7; /* Увеличенная высота строки для лучшей читаемости */
+                background-image: url('chifirochek.jpg'); /* Фон остается неизменным */
+                background-size: cover; /* Масштабирование фона на всю область */
+                background-position: center;
+                background-repeat: no-repeat;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-attachment: fixed; /* Фиксированный фон */
+            }
+
+            /* Контейнер для контента */
+            .container {
+                width: 85%; /* Чуть больше ширины */
+                max-width: 950px; /* Увеличенная максимальная ширина */
+                margin: 20px auto;
+                padding: 30px; /* Увеличенный отступ внутри контейнера */
+                background-color: rgba(0, 0, 0, 0.8); /* Более темный фон с большей прозрачностью */
+                border-radius: 12px; /* Закругленные углы */
+                box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Более выразительная тень */
+                transition: box-shadow 0.3s ease; /* Анимация тени при наведении */
+            }
+
+            /* Стили для списков */
+            ul {
+                list-style: decimal; /* Нумерованный список */
+                padding-left: 20px;
+            }
+
+            li {
+                margin-bottom: 12px;
+                font-size: 1.1em;
+            }
+            /* Стиль для выделения текста */
+            .important {
+              font-weight: bold; /* Жирный шрифт */
+              color: #ffcc00;  /* Желтый цвет */
+            }
+
+            /* Дополнительные стили для текста */
+            .container p {
+                font-size: 1.1em;
+                margin-top: 15px;
+            }
+        </style>
     </head>
-    <body style="width: auto;background-image: url('chifirochek.jpg');
-      background-size: 100% 100%;
-      background-position: center;
-      background-repeat: no-repeat;">
-        <div style="width: 100%;"><div class="container">
-          <ul>
-              <li>Первым делом берём кружку</li>
-              <li>Сыпим 7-8 чайных ложек(пакетиков) на 0.5л воды</li>
-              <li>Варим чай около 5 минут</li>
-              <li>Накрываем наше зелье и даём постоять ещё 5 минут</li>
-              <li>По желанию фильтруем</li>
-          </ul>
-          На этом всё. Приятного чаепития!!!
-      </div></div>
+    <body style="width: auto;">
+        <div class="container">
+            <ul>
+                <li><span class="important">Первым делом</span> берём кружку</li>
+                <li>Сыпим <span class="important">7-8 чайных ложек(пакетиков)</span> на 0.5л воды</li>
+                <li>Варим чай около <span class="important">5 минут</span></li>
+                <li>Накрываем наше зелье и даём постоять ещё <span class="important">5 минут</span></li>
+                <li>По желанию фильтруем</li>
+            </ul>
+            <p>На этом всё. Приятного чаепития!!!</p>
+        </div>
     </body>
 </html>
