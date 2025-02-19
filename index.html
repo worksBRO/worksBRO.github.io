@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Обо мне</title>
   <style>
+    /* Общие стили для всего документа */
     body, html {
       width: 100%;
       height: 100%;
@@ -13,33 +14,88 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      color: #fff;
-      line-height: 1.6;
-      
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Современный шрифт */
+      color: #f0f0f0; /* Более светлый текст */
+      line-height: 1.7; /* Увеличенная высота строки для лучшей читаемости */
+      background-image: url('bratva.jpg'); /* Фон остается неизменным */
+      background-size: cover; /* Масштабирование фона на всю область */
+      background-position: center;
+      background-repeat: no-repeat;
       display: flex;
       justify-content: center;
       align-items: center;
+      /* Фиксированный фон */
+      background-attachment: fixed;
     }
 
+    /* Контейнер для контента */
     .container {
-      width: 80%;
-      max-width: 900px;
+      width: 85%; /* Чуть больше ширины */
+      max-width: 950px; /* Увеличенная максимальная ширина */
       margin: 20px auto;
-      padding: 20px;
-      background-color: rgba(0, 0, 0, 0.7);
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-      color: #fff;
+      padding: 30px; /* Увеличенный отступ внутри контейнера */
+      background-color: rgba(0, 0, 0, 0.8); /* Более темный фон с большей прозрачностью */
+      border-radius: 12px; /* Закругленные углы */
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7); /* Более выразительная тень */
+      transition: box-shadow 0.3s ease; /* Анимация тени при наведении */
+    }
+
+    /* Header стили */
+    header {
+      margin-bottom: 25px; /* Отступ под заголовком */
+    }
+
+    header h1 {
+      font-size: 2.5em; /* Больший размер заголовка */
+      font-weight: 600; /* Более жирный шрифт заголовка */
+      color: #ffcc00; /* Цвет заголовка */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для заголовка */
+      letter-spacing: 1px;
+    }
+
+    /* Секции контента */
+    .section {
+      margin-bottom: 25px;
+    }
+
+    .section h2 {
+      font-size: 1.8em;
+      color: #ffcc00; /* Цвет подзаголовков */
+      margin-bottom: 15px; /* Отступ под подзаголовком */
+      border-bottom: 1px solid #444; /* Линия под подзаголовком */
+      padding-bottom: 8px;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Стили для списков */
+    ul {
+      list-style: disc; /* Маркеры для списков */
+      padding-left: 25px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Стили для ссылок */
+    a {
+      color: #a0d468; /* Цвет ссылок */
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: #d4ed71; /* Цвет ссылок при наведении */
+      text-decoration: underline;
+    }
+
+    /* Стили для контактной информации */
+    .section p {
+      font-size: 1.05em;
     }
   </style>
 </head>
 <body style="size: auto">
-  <div style="width: 100%;background-image: url('bratva.jpg');
-      background-size: 100% 100%;
-      background-position: center;
-      background-repeat: no-repeat;">
-
   <div class="container">
 
     <header>
@@ -82,7 +138,6 @@
       </p>
     </div>
 
-  </div>
   </div>
 </body>
 </html>
